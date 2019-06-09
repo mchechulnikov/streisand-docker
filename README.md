@@ -5,5 +5,5 @@ Run-in-Docker wrapper for [Streisand](https://github.com/StreisandEffect/streisa
 1. Install Docker
 2. Create you VPS
 3. Generate SSH key for this VPS
-4. ```./build.sh```
-5. ```./run.sh <PATH_TO_YOUR_SSH_FOLDER>```
+4. ```chmod +x ./build.sh; ./build.sh```
+5. ```chmod +x ./run.sh; ./run.sh <PATH_TO_YOUR_SSH_FOLDER>```
