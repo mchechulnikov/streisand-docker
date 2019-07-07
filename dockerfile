@@ -11,3 +11,8 @@ RUN pip install dopy==0.3.5
 RUN git clone https://github.com/StreisandEffect/streisand.git
 
 WORKDIR /streisand
+
+COPY ./streisand.run.sh .
+RUN chmod +x ./streisand.run.sh
+
+ENTRYPOINT [ "./streisand.run.sh" ]

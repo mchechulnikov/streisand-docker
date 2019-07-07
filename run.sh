@@ -5,9 +5,10 @@ if [ ! -d $1 ]; then
     exit 1
 fi
 
+mkdir -p ./vpn-docs
+
 docker run -it --rm \
     --name streisand-vpn \
-    -v "$PWD":/docs:cached \
+    -v "$PWD"/vpn-docs:/docs \
     -v $1:/root/.ssh \
-    streisand-vpn \
-    /bin/bash ./streisand && cp ./generated-docs /docs
+    streisand-vpn
