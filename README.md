@@ -1,5 +1,5 @@
-# VPN runner
-Run-in-Docker wrapper for [Streisand](https://github.com/StreisandEffect/streisand) VPN server runner.
+# Streisand server runner
+Run-in-Docker wrapper for [Streisand](https://github.com/StreisandEffect/streisand) server runner.
 
 ## Instruction
 1. Install Docker
