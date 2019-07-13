@@ -3,10 +3,10 @@ Run-in-Docker wrapper for [Streisand](https://github.com/StreisandEffect/streisa
 
 ## Instruction
 1. Install Docker
-2. Generate SSH key for this VPS
+2. Generate SSH key and add it to your cloud provider
 3. `chmod +x ./build.sh; ./build.sh`
 4. `chmod +x ./run.sh; ./run.sh <PATH_TO_YOUR_SSH_FOLDER>`
-5. `yes`
+5. Choose your cloud provider and custom installation
 6. `/root/.ssh/<YOUR_SSH_PRIVATE_KEY_NAME>`
-7. Press Enter for all points and follow the Streisand instructions
-8. Follow instuctions in `/vpn-docs/generated-docs/streisand.html`. Keep it safe!
+7. Follow Streisand instructions
+8. When script will be finished check instuctions in `/vpn-docs/generated-docs/streisand.html`. Keep it safe!
