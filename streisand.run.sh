@@ -8,4 +8,4 @@ popd
 ./streisand
 
 ls
-cp ./generated-docs /docs
+cp -r ./generated-docs /docs
