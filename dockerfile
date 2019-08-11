@@ -19,18 +19,18 @@ WORKDIR /streisand
 #     ./playbooks/roles/gpg/vars/main.yml
 
 # or try it https://github.com/StreisandEffect/streisand/issues/1597#issuecomment-509714725
-RUN sed -i \
-    's+- 2F2B01E7.security@openvpn.net.asc+# - 2F2B01E7.security@openvpn.net.asc+g' \
-    ./playbooks/roles/gpg/vars/main.yml
-RUN sed -i \
-    's+- 7F343FA7.nmav@redhat.com.asc+# - 7F343FA7.nmav@redhat.com.asc+g' \
-    ./playbooks/roles/gpg/vars/main.yml
-RUN sed -i \
-    's+- 96865171.nmav@gnutls.org.asc+# - 96865171.nmav@gnutls.org.asc+g' \
-    ./playbooks/roles/gpg/vars/main.yml
-RUN sed -i \
-    's+- 93298290.torbrowser@torproject.org.asc+# - 93298290.torbrowser@torproject.org.asc+g' \
-    ./playbooks/roles/gpg/vars/main.yml
+# RUN sed -i \
+#     's+- 2F2B01E7.security@openvpn.net.asc+# - 2F2B01E7.security@openvpn.net.asc+g' \
+#     ./playbooks/roles/gpg/vars/main.yml
+# RUN sed -i \
+#     's+- 7F343FA7.nmav@redhat.com.asc+# - 7F343FA7.nmav@redhat.com.asc+g' \
+#     ./playbooks/roles/gpg/vars/main.yml
+# RUN sed -i \
+#     's+- 96865171.nmav@gnutls.org.asc+# - 96865171.nmav@gnutls.org.asc+g' \
+#     ./playbooks/roles/gpg/vars/main.yml
+# RUN sed -i \
+#     's+- 93298290.torbrowser@torproject.org.asc+# - 93298290.torbrowser@torproject.org.asc+g' \
+#     ./playbooks/roles/gpg/vars/main.yml
 
 COPY ./streisand.run.sh .
 RUN chmod +x ./streisand.run.sh
