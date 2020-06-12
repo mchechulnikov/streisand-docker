@@ -4,7 +4,7 @@ VOLUME ["/docs", "/root/.ssh"]
 
 RUN apt-get update
 RUN apt-get install -y git
-RUN apt-get install -y python-paramiko python-pip python-pycurl python-dev build-essential
+RUN apt-get install -y python-paramiko python-pip python-pycurl python-dev python3 build-essential
 RUN pip install ansible markupsafe
 RUN pip install dopy==0.3.5
 
